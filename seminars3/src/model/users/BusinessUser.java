@@ -15,12 +15,16 @@ public class BusinessUser extends User {
 		return listOfPages;
 	}
 	
-	public void setListOfPages(ArrayList<Page> listOfPages) {
-		this.listOfPages = listOfPages;
+	public void setListOfPages(ArrayList<Page> inputlistOfPages) {
+		if (inputlistOfPages != null) {
+			this.listOfPages = inputlistOfPages;
+		}
 	}
 	
 	public void createPage(Page a) {
-		listOfPages.add(a);
+		if (a != null) {
+			listOfPages.add(a);
+		}
 	}
 	
 	@Override

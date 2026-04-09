@@ -9,8 +9,10 @@ public class GuestUser {
 		return generatedId;
 	}
 	
-	public void setGeneratedId(int generatedId) {
-		this.generatedId = generatedId;
+	public void setGeneratedId(int inputgeneratedId) {
+		if (inputgeneratedId < 0) {
+			this.generatedId = inputgeneratedId;
+		}
 	}
 
 	@Override

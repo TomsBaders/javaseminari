@@ -24,14 +24,20 @@ public class Post {
 		return CountOfLikes;
 	}
 	
-	public void setMsg(String msg) {
-		this.msg = msg;
+	public void setMsg(String inputmsg) {
+		if (inputmsg != null || inputmsg != " ") {
+			this.msg = inputmsg;
+		}
 	}
-	public void setDate(LocalDateTime date) {
-		this.date = date;
+	public void setDate(LocalDateTime inputdate) {
+		if (inputdate != null) {
+			this.date = inputdate;
+		}
 	}
-	public void setCountOfLikes(int countOfLikes) {
-		this.CountOfLikes = countOfLikes;
+	public void setCountOfLikes(int inputcountOfLikes) {
+		if (inputcountOfLikes < 0) {
+			this.CountOfLikes = inputcountOfLikes;
+		}
 	}
 	
 	@Override

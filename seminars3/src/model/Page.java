@@ -30,17 +30,25 @@ public class Page {
 		return postsInPage;
 	}
 	
-	public void setTitle(String title) {
-		this.title = title;
+	public void setTitle(String inputtitle) {
+		if (inputtitle != null || inputtitle != " ") {
+			this.title = inputtitle;
+		}
 	}
-	public void setDescription(String description) {
-		this.description = description;
+	public void setDescription(String inputdescription) {
+		if (inputdescription != null || inputdescription != " ") {
+			this.description = inputdescription;
+		}
 	}
-	public void setFollowers(ArrayList<User> followers) {
-		this.followers = followers;
+	public void setFollowers(ArrayList<User> inputfollowers) {
+		if (inputfollowers != null) {
+			this.followers = inputfollowers;
+		}
 	}
-	public void setPostsInPage(ArrayList<Post> postsInPage) {
-		this.postsInPage = postsInPage;
+	public void setPostsInPage(ArrayList<Post> inputpostsInPage) {
+		if (inputpostsInPage != null) {
+			this.postsInPage = inputpostsInPage;
+		}
 	}
 	
 	@Override

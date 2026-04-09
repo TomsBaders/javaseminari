@@ -22,14 +22,20 @@ public class User extends GuestUser {
 		return password;
 	}
 	
-	public void setNameAndSurname(String nameAndSurname) {
-		this.nameAndSurname = nameAndSurname;
+	public void setNameAndSurname(String inputnameAndSurname) {
+		if (inputnameAndSurname != null || inputnameAndSurname != " ") {
+			this.nameAndSurname = inputnameAndSurname;
+		}
 	}
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUsername(String inputusername) {
+		if (inputusername != null || inputusername != " ") {
+			this.username = inputusername;
+		}
 	}
-	public void setPassword(String password) {
-		this.password = password;
+	public void setPassword(String inputpassword) {
+		if (inputpassword != null || inputpassword != " ") {
+			this.password = inputpassword;
+		}
 	}
 	
 	public boolean login(String name, String user, String key) {

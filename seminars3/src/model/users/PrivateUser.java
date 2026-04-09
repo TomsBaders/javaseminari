@@ -23,14 +23,20 @@ public class PrivateUser extends User {
 		return followers;
 	}
 	
-	public void setPrivatePosts(ArrayList<Post> privatePosts) {
-		this.privatePosts = privatePosts;
+	public void setPrivatePosts(ArrayList<Post> inputprivatePosts) {
+		if (inputprivatePosts != null) {
+			this.privatePosts = inputprivatePosts;
+		}
 	}
-	public void setPublicPosts(ArrayList<Post> publicPosts) {
-		this.publicPosts = publicPosts;
+	public void setPublicPosts(ArrayList<Post> inputpublicPosts) {
+		if (inputpublicPosts != null) {
+			this.publicPosts = inputpublicPosts;
+		}
 	}
-	public void setFollowers(ArrayList<User> followers) {
-		this.followers = followers;
+	public void setFollowers(ArrayList<User> inputfollowers) {
+		if (inputfollowers != null) {
+			this.followers = inputfollowers;
+		}
 	}
 	
 	/*
