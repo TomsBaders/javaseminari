@@ -92,6 +92,4 @@ public class Course {
 		
 		professor.remove(inputProf);
 	}
-	
-	
 }

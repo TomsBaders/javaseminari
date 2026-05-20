@@ -6,7 +6,7 @@ import lv.venta.model.Product;
 import lv.venta.model.ProductType;
 
 public interface IProductFilterService {
-//TODO
+	//TODO
 	//1. funkcija, kas izfiltre produktus pec cenas slieksna
 	public abstract ArrayList<Product> filterByPriceLessThan(float threshold) throws Exception;
 	//2. funkcija, kas izfiltre prodfuktus pec tipa
